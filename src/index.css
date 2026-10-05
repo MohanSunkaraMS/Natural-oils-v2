@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&family=Noto+Sans+Telugu:wght@400;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #c8922a;
+  --color-dark: #2c1a0e;
+  --color-cream: #fdf8f0;
+  --color-warm: #f5ede0;
+  --color-brand: #3d2b1a;
+  --color-accent: #8b4513;
+  --color-tgreen: #4a7c59;
+  --color-muted: #9a7a5a;
+
+  --font-playfair: "Playfair Display", serif;
+  --font-lato: "Lato", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-lato);
+    background-color: var(--color-cream);
+    color: var(--color-dark);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  section[id] {
+    scroll-margin-top: 7.5rem;
+  }
+
+  summary {
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  button,
+  a {
+    cursor: pointer;
+  }
+
+  html.lang-te body,
+  html.lang-te .font-playfair,
+  html.lang-te .font-lato {
+    font-family: "Noto Sans Telugu", sans-serif;
+  }
+}

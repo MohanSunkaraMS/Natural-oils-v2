@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7f1"/>
+      <stop offset="1" stop-color="#f0e4d0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="0.4" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#c8b08a" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="oil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8dc8a"/>
+      <stop offset="1" stop-color="#c8892a"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#2c1a0e" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+<rect width="800" height="800" fill="url(#bg)"/>
+<ellipse cx="400" cy="640" rx="250" ry="28" fill="#e6d3b6"/>
+    
+  <g filter="url(#soft)">
+    <path d="M330 250h140v300c0 28-24 48-70 48s-70-20-70-48V250z" fill="#c8892a"/>
+    <path d="M338 300h124v230c0 22-20 38-62 38s-62-16-62-38V300z" fill="#f6d48a"/>
+    <path d="M348 318h28v190c-18 8-28 8-28 0V318z" fill="#fff" opacity="0.28"/>
+    <rect x="352" y="168" width="96" height="86" rx="14" fill="#f7f1e6" stroke="#e3d2b6"/>
+    <rect x="374" y="142" width="52" height="32" rx="8" fill="#8b5a2b"/>
+    <path d="M330 250h140v300c0 28-24 48-70 48s-70-20-70-48V250z" fill="url(#glass)"/>
+  </g>
+    <g fill="#c4a06a">
+      <ellipse cx="180" cy="560" rx="36" ry="22" transform="rotate(-20 180 560)"/>
+      <ellipse cx="230" cy="600" rx="34" ry="20" transform="rotate(15 230 600)"/>
+      <ellipse cx="590" cy="570" rx="36" ry="22" transform="rotate(18 590 570)"/>
+    </g>
+    <g fill="#8d6a43">
+      <ellipse cx="180" cy="560" rx="14" ry="8" transform="rotate(-20 180 560)"/>
+      <ellipse cx="230" cy="600" rx="13" ry="7" transform="rotate(15 230 600)"/>
+      <ellipse cx="590" cy="570" rx="14" ry="8" transform="rotate(18 590 570)"/>
+    </g>
+</svg>

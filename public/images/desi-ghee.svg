@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7f1"/>
+      <stop offset="1" stop-color="#f0e4d0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="0.4" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#c8b08a" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="oil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8dc8a"/>
+      <stop offset="1" stop-color="#c8892a"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#2c1a0e" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+<rect width="800" height="800" fill="url(#bg)"/>
+<ellipse cx="400" cy="650" rx="250" ry="28" fill="#e6d3b6"/>
+    <g filter="url(#soft)">
+      <path d="M250 350h300l-24 220c-5 32-36 54-126 54s-121-22-126-54L250 350z" fill="#e7b84e"/>
+      <ellipse cx="400" cy="350" rx="150" ry="36" fill="#f6d27a"/>
+      <path d="M470 300c20 20 10 50-16 58" fill="none" stroke="#c8922a" stroke-width="8" stroke-linecap="round"/>
+    </g>
+</svg>
